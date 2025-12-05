@@ -1,0 +1,53 @@
+/* Contenedor de la imagen (OVERLOAD, FINISH, CANCEL) */
+.overload-overlay {
+  position: fixed;
+  top: 30%;
+  left: -50%; /* fuera de la pantalla a la izquierda */
+  transform: translateX(0);
+  z-index: 9999;
+  pointer-events: none;
+  transition: left 1s linear, transform 1s linear;
+}
+
+/* Ajusta el tamaño según tu imagen */
+.overload-image {
+  max-width: 600px;
+  width: 40vw;
+  height: auto;
+}
+
+/* Contador centrado horizontal y en la parte superior */
+.overload-countdown {
+  position: fixed;
+  top: 15%;          /* arriba */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  font-family: "Roboto Mono", monospace;
+  font-size: 72px;   /* números grandes */
+  color: #ffffff;    /* blanco */
+  text-align: center;
+}
+
+/* Solo el texto de tiempo, sin fondo ni bordes */
+.overload-countdown-time {
+  font-weight: bold;
+}
+
+/* Parpadeo en rojo cuando queden 60s o menos */
+.overload-countdown-warning {
+  color: #ff4444;
+  animation: overload-blink 1s step-start infinite;
+}
+
+/* Estilo cuando termina (tanto por fin natural como forzado) */
+.overload-countdown-finished {
+  color: #ff0000;
+}
+
+/* Animación de parpadeo */
+@keyframes overload-blink {
+  50% {
+    opacity: 0.2;
+  }
+}

@@ -23,7 +23,7 @@
       "src": "styles/overload.css"
     }
   ],
-  "manifest": "https://example.com/overload-timer/module.json",
+  "manifest": "https://raw.githubusercontent.com/X14-lab/overload-timer/refs/heads/main/module.json",
   "download": "https://example.com/overload-timer/overload-timer.zip",
   "flags": {}
 }

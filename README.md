@@ -55,5 +55,5 @@ En las opciones del mundo se puede definir:
 En Foundry VTT:
 1. Abrir **Add-on Modules**.
 2. Pulsar **Install Module**.
-3. Introducir esta URL en **Manifest URL**:
+3. Introducir esta URL "https://raw.githubusercontent.com/X14-lab/overload-timer/refs/heads/main/module.json" en **Manifest URL**:
 
